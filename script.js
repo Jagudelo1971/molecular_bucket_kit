@@ -30,13 +30,3 @@ document.addEventListener('DOMContentLoaded', () => {
         revealOnScroll.observe(element);
     });
 });
-
-// Contador de visitas
-fetch('https://api.countapi.xyz/hit/molecular-bucket/home')
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById('visit-counter').textContent = data.value;
-  })
-  .catch(error => {
-    console.error('Error contador:', error);
-  });
