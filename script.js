@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Contador de visitas
-fetch('https://api.countapi.xyz/hit/jairoagudelo/portafolio')
+fetch('https://api.countapi.xyz/hit/molecular-bucket/home')
   .then(response => response.json())
   .then(data => {
     document.getElementById('visit-counter').textContent = data.value;
